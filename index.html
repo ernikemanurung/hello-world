@@ -38,6 +38,101 @@
         </div>
     </nav>
 </header>
+<div id="login" class="section db">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>
+
+        </div><!-- end title -->
+
+        <div class="row">
+            <div class="col-md-10">
+                <div class="contact_form">
+                    <div id="message"></div>
+                    <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
+                        <div class="row">
+
+                            <div class="col-md-6 offset-md-8">
+                                <input type="text" name="username" id="username" class="form-control"
+                                    placeholder="Username">
+                            </div>
+                            <div class="col-md-6 offset-md-8">
+                                <input type="password" name="password" id="password" class="form-control"
+                                    placeholder="Password">
+                                <h6><a href="edit_password.html"><i>Lupa password?</i></a></h6>
+
+
+                            </div>
+
+
+                            <div class="col-md-6 offset-md-8">
+                                <div class="col-md-30">
+                                    <div class="text-center pdi">
+
+                                        <button type="submit" value="SEND" id="submit"
+                                            class="hvr-bounce-to-right get-btn">Login</button>
+                                        <div>Belum punya akun?<h6><a href="daftar.html"><i>Daftar disini</i></a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                </h3>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end section -->
+
+<a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+<!-- ALL JS FILES -->
+<script src="js/all.js"></script>
+<!-- ALL PLUGINS -->
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        effect: 'coverflow',
+        centeredSlides: true,
+        loopFillGroupWithBlank: true,
+        slidesPerView: 3,
+        initialSlide: 3,
+        keyboardControl: true,
+        mousewheelControl: false,
+        lazyLoading: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1199: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            575: {
+                slidesPerView: 1,
+                spaceBetween: 3,
+            }
+        }
+    });
+</script>
 
 
 </body>
